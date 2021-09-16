@@ -1,5 +1,20 @@
+@font-face {
+  font-family: 'poppins-regular';
+  src: url('/style/fonts/Poppins/Poppins-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'poppins-semi-bold';
+  src: url('/style/fonts/Poppins/Poppins-SemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'poppins-extra-bold';
+  src: url('/style/fonts/Poppins/Poppins-ExtraBold.woff') format('woff');
+}
+
 body {
-  font-family: poppins;
+  font-family: poppins-regular;
   background-color: #050505;
   color: white;
   background-image: url("https://www.maxpixel.net/static/photo/1x/Seamless-Pattern-Pattern-Vector-Pattern-Seamless-6106662.png");
@@ -25,11 +40,13 @@ figcaption {
 }
 
 strong {
+  font-family: poppins-semi-bold;
   color: #D3D3D3;
   text-decoration: underline;
 }
 
 h2, h3 {
+  font-family: poppins-extra-bold;
   color: #F1C40F;
 }
 
