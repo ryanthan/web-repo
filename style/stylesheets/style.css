@@ -1,16 +1,16 @@
 @font-face {
   font-family: 'poppins-regular';
-  src: url('/style/fonts/Poppins/Poppins-Regular.woff') format('woff');
+  src: url('../style/fonts/Poppins/Poppins-Regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'poppins-semi-bold';
-  src: url('/style/fonts/Poppins/Poppins-SemiBold.woff') format('woff');
+  src: url('../style/fonts/Poppins/Poppins-SemiBold.woff') format('woff');
 }
 
 @font-face {
   font-family: 'poppins-extra-bold';
-  src: url('/style/fonts/Poppins/Poppins-ExtraBold.woff') format('woff');
+  src: url('../style/fonts/Poppins/Poppins-ExtraBold.woff') format('woff');
 }
 
 body {
