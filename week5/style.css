@@ -1,0 +1,135 @@
+#header {
+  height: 55vh;
+  overflow: hidden;
+  position: relative;
+}
+
+#heroImage {
+  bottom: 450px;
+  position: relative;
+  z-index: -1;
+}
+
+#header h1 {
+  font-family: Poppins;
+  font-weight: bolder;
+  position: absolute;
+  z-index: 1;
+  top: 25vh;
+  left: 100px;
+  font-size: 90px;
+  color: #2C1A1D;
+}
+
+h1 {
+  font-family:"Poppins";
+  font-weight: bolder;
+  color: #A67F8E;
+}
+
+body {
+  font-family: "Raleway";
+  font-size: 20px;
+  margin: 0;
+  background-image: url("assets/floral.png");
+}
+
+#main-content, #services, #form {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+a:link {
+  color: #DBB3B1;
+  font-weight: bold;
+}
+
+a:visited {
+  color: #6C534E;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #C89FA3;
+  font-weight: bold;
+}
+
+a:active {
+  color: #6C534E;
+  font-weight: bold;
+}
+
+button {
+  font-size: 16px;
+  font-family: Raleway;
+  text-align: center;
+  width: 150px;
+  padding: 8px;
+  border: solid #2C1A1D 3px;
+  border-radius: 10px;
+  background-color: #C89FA3;
+  color: white;
+}
+
+button:hover {
+  background-color: #A67F8E;
+  color: #E3E3E3;
+}
+
+button:active {
+  background-color: #6C534E;
+  color: #E3E3E3;
+}
+
+#servicesTable img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  border: solid #2C1A1D 3px;
+  border-radius: 10px;
+  filter: drop-shadow(5px 5px 8px gray);
+}
+
+#servicesTable {
+  table-layout: fixed;
+  text-align: center;
+  border-spacing: 25px;
+}
+
+#servicesTable th {
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 25px;
+  color: #C89FA3;
+}
+
+input {
+  font-size: 18px;
+  font-family: "Raleway";
+  padding: 8px;
+  border: solid #2C1A1D 3px;
+  border-radius: 10px;
+}
+
+#form label {
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: bold;
+  color: #6C534E;
+  text-decoration: underline;
+}
+
+#bigQuestionForm {
+  font-size: 16px;
+  font-family: "Raleway";
+  padding: 8px;
+  border: solid #2C1A1D 3px;
+  border-radius: 10px;
+}
+
+#groove {
+  border:groove #A67F8E 2px;
+}

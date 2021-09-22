@@ -1,17 +1,19 @@
 body {
-  font-family: Poppins;
-  font-weight: normal;
-  background-color: #050505;
+  font-family: "Poppins";
   color: white;
   background-image: url("https://www.maxpixel.net/static/photo/1x/Seamless-Pattern-Pattern-Vector-Pattern-Seamless-6106662.png");
-  background-color: rgba(0,0,0,.92);
+  background-color: rgba(0,0,0,.95);
   background-blend-mode: multiply;
-  padding-bottom: 20px;
-  padding-left: 15px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 img {
+  width: 100%;
   height: 400px;
+  object-fit: cover;
+  display: block;
   border-radius: 30px;
   border: 3px solid #B8BCBB;
 }
@@ -21,11 +23,11 @@ figure {
 }
 
 figcaption {
-  font-size: 10px;
+  font-size: 12px;
   color: #B8BCBB;
 }
 
-strong {
+#description strong {
   font-family: Poppins;
   font-weight: bold;
   color: #D3D3D3;
@@ -34,7 +36,7 @@ strong {
 
 h2, h3 {
   font-family: Poppins;
-  font-weight: 900;
+  font-weight: bold;
   color: #F1C40F;
 }
 
