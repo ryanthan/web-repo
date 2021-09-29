@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Week 6 Assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Birthstone:normal,bold,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:normal,bold,900">
+  </head>
+
+  <body>
+    <section id="header">
+      <h1>Beautiful Landscapes</h1>
+      <h3>Please pick a time of day:</h3>
+      <button id="dawnButton">Dawn</button>
+      <button id="middayButton">Midday</button>
+      <button id="duskButton">Dusk</button>
+      <button id="nightButton">Night</button>
+    </section>
+
+    <section id="imageInfo">
+      <figcaption id="imageCaption">Aconcagua, Argentina</figcaption>
+      <p>All photos provided by <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
+    </section>
+
+    <script>
+      document.getElementById("dawnButton").addEventListener("click", function() {
+        document.body.style.backgroundImage = "url('assets/dawn.jpg')";
+        document.getElementById("imageCaption").innerHTML = "Jamnik, Slovenia";
+      });
+
+      document.getElementById("middayButton").addEventListener("click", function() {
+        document.body.style.backgroundImage = "url('assets/midday.jpg')";
+        document.getElementById("imageCaption").innerHTML = "Kluane National Park, Canada";
+      });
+
+      document.getElementById("duskButton").addEventListener("click", function() {
+        document.body.style.backgroundImage = "url('assets/dusk.jpg')";
+        document.getElementById("imageCaption").innerHTML = "Värmdö, Sweden";
+      });
+
+      document.getElementById("nightButton").addEventListener("click", function() {
+        document.body.style.backgroundImage = "url('assets/night.jpg')";
+        document.getElementById("imageCaption").innerHTML = "Moena, Italy";
+      });
+    </script>
+  </body>
+</html>
