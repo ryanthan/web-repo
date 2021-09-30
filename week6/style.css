@@ -21,7 +21,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   text-shadow: 0 0 5px black, 0 0 5px black, 0 0 5px black, 0 0 5px black;
-  /* Source for text outline: https://stackoverflow.com/questions/57464935/font-outline-using-only-css */
+  /* Text outline help from: https://stackoverflow.com/questions/57464935/font-outline-using-only-css */
 }
 
 #imageInfo h3 {
@@ -34,7 +34,7 @@ body {
 }
 
 #imageInfo p {
-  font-size: 12px;
+  font-size: 10px;
   position: absolute;
   bottom: 0px;
   left: 15px;
@@ -60,7 +60,7 @@ a:active {
   font-weight: bold;
 }
 
-button {
+#header button {
   font-size: 16px;
   font-family: "Raleway";
   text-align: center;
@@ -72,10 +72,17 @@ button {
   color: white;
 }
 
-button:hover {
+#header button:hover {
   background-color: #002855;
 }
 
-button:active {
+#header button:active {
   background-color: #001233;
+}
+
+#backgroundMusic input {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  filter: drop-shadow(0 0 0.3rem black);
 }

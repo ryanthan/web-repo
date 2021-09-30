@@ -20,7 +20,15 @@
 
     <section id="imageInfo">
       <h3 id="imageCaption">Aconcagua, Argentina</h3>
-      <p>All photos provided by <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
+      <p>All photos provided by <a href="https://unsplash.com/" target="_blank">Unsplash</a> | Royalty free music from <a href="https://www.bensound.com/royalty-free-music/track/new-dawn" target="_blank">Bensound</a> | Play/pause icons from <a href="https://www.flaticon.com/" target="_blank">Flaticon</a></p>
+    </section>
+
+    <section id="backgroundMusic">
+      <input id="playPauseButton" type="image" src="assets/play.png"/>
+      <!-- Audio help from: https://www.w3schools.com/jsref/met_audio_play.asp -->
+      <audio id="relaxingMusic">
+        <source src="assets/relaxing-music.mp3" type="audio/mpeg">
+      </audio>
     </section>
 
     <script>
@@ -42,6 +50,18 @@
       document.getElementById("nightButton").addEventListener("click", function() {
         document.body.style.backgroundImage = "url('assets/night.jpg')";
         document.getElementById("imageCaption").innerHTML = "Moena, Italy";
+      });
+
+      document.getElementById("playPauseButton").addEventListener("click", function() {
+        var music = document.getElementById("relaxingMusic");
+        
+        if (music.duration > 0 && !music.paused) { // Help from: https://stackoverflow.com/questions/9437228/html5-check-if-audio-is-playing
+          music.pause();
+          document.getElementById("playPauseButton").src = "assets/play.png"
+        } else {
+          music.play();
+          document.getElementById("playPauseButton").src = "assets/pause.png"
+        }
       });
     </script>
   </body>
