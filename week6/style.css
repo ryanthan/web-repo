@@ -24,12 +24,13 @@ body {
   /* Source for text outline: https://stackoverflow.com/questions/57464935/font-outline-using-only-css */
 }
 
-#imageInfo figcaption {
+#imageInfo h3 {
   font-size: 26px;
   font-weight: bold;
   position: absolute;
   top: 10px;
   right: 15px;
+  margin: 0;
 }
 
 #imageInfo p {
