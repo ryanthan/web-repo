@@ -24,7 +24,7 @@ body {
   /* Text outline help from: https://stackoverflow.com/questions/57464935/font-outline-using-only-css */
 }
 
-#imageInfo h3 {
+#extras h3 {
   font-size: 26px;
   font-weight: bold;
   position: absolute;
@@ -33,11 +33,18 @@ body {
   margin: 0;
 }
 
-#imageInfo p {
+#extras p {
   font-size: 10px;
   position: absolute;
   bottom: 0px;
   left: 15px;
+}
+
+#extras input {
+  filter: drop-shadow(0 0 0.3rem black);
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
 }
 
 a:link {
@@ -78,11 +85,4 @@ a:active {
 
 #header button:active {
   background-color: #001233;
-}
-
-#backgroundMusic input {
-  position: absolute;
-  bottom: 10px;
-  right: 15px;
-  filter: drop-shadow(0 0 0.3rem black);
 }
