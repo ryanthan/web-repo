@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Week 7 Assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  </head>
+
+  <body>
+    <section id="mainImage">
+      <div class="loader"></div>
+    </section>
+    <hr class="groove">
+
+    <section id="quoteSection">
+      <h1 id="quote">Click the button below to get an inspirational video game quote.</h1>
+      <button id="newQuoteButton">New Quote</button>
+      <p><a id="imageSource" href="https://unsplash.com/photos/p0j-mE6mGo4" target="_blank">Image Source</a></p>
+    </section>
+
+    <script>
+      const quotes = ["If you have a dream, don’t wait. Act. One of life’s little rules. - Axel (Kingdom Hearts)", "What is bravery, without a dash of recklessness? - Hawkeye Gough (Dark Souls)", "A journey of a thousand miles begins with a single step. So just take it step by step. - Waka (Okami)", "We don't get to choose how we start in this life. Real 'greatness' is what you do with the hand you're dealt. - Victor Sullivan (Uncharted 3)", "We are all our own worst enemy. But also our best teacher. - Gouken (Super Street Fighter IV)", "No matter how dark the night, morning always comes, and our journey begins anew. - Lulu (Final Fantasy X)"];
+      const images = ["url('assets/kingdomHearts.png')", "url('assets/darkSouls.jpg')", "url('assets/okami.jpg')", "url('assets/uncharted.jpg')", "url('assets/street-fighter.jpg')", "url('assets/ffx.jpg')"];
+      const imageCitations = ["https://wallpapercave.com/wp/wp8735641.jpg", "https://wallpapercave.com/wp/wp3756449.jpg", "https://wallpapercave.com/wp/wp3591906.jpg", "https://wallpapercave.com/wp/wp1827020.jpg", "https://wallpapercave.com/wp/HeUwdfa.jpg", "https://wallpapercave.com/wp/wp2654328.jpg"];
+
+      let counter = 0;
+
+      document.getElementById("newQuoteButton").addEventListener("click", function() {
+        document.getElementById("quote").innerHTML = quotes[counter];
+        document.getElementById("mainImage").style.backgroundImage = images[counter];
+        document.getElementById("imageSource").href = imageCitations[counter];
+
+        if (counter >= quotes.length - 1) {
+          counter = 0;
+        } else {
+          counter++;
+        }
+      });
+    </script>
+  </body>
+</html>
