@@ -9,216 +9,191 @@
   </head>
 
   <body>
-    <section id="mainImage">
+    <section id="header">
       <h1>Ryan's Self-Care Menu</h1>
     </section>
+
     <hr class="groove">
 
-    <div class="tab">
-      <button class="tablinks" onclick="openDayTab(event, 'Monday')" id="defaultOpen">Monday</button>
-      <button class="tablinks" onclick="openDayTab(event, 'Tuesday')">Tuesday</button>
-      <button class="tablinks" onclick="openDayTab(event, 'Wednesday')">Wednesday</button>
-      <button class="tablinks" onclick="openDayTab(event, 'Thursday')">Thursday</button>
-      <button class="tablinks" onclick="openDayTab(event, 'Friday')">Friday</button>
-      <button class="tablinks" onclick="openDayTab(event, 'Saturday')">Saturday</button>
-      <button class="tablinks" onclick="openDayTab(event, 'Sunday')">Sunday</button>
-    </div>
-    
-    <div id="Monday" class="tabcontent">
-      <h2>It’s Monday!</h2>
-      <p>Today you have Object Oriented Analysis & Design from 10:20 a.m. to 11:10 a.m. and Image from 4:10 p.m. to 5:25 p.m. You got this!</p>
-      <h3>Some things you can do to destress:</h3>
+    <section id="selfCareMenu">
+      <!-- Vertical Tabs help from: https://www.w3schools.com/howto/howto_js_vertical_tabs.asp -->
+      <div class="tab">
+        <button class="tablinks" onclick="openDayTab(event, 'Monday')" id="defaultOpen">Monday</button>
+        <button class="tablinks" onclick="openDayTab(event, 'Tuesday')">Tuesday</button>
+        <button class="tablinks" onclick="openDayTab(event, 'Wednesday')">Wednesday</button>
+        <button class="tablinks" onclick="openDayTab(event, 'Thursday')">Thursday</button>
+        <button class="tablinks" onclick="openDayTab(event, 'Friday')">Friday</button>
+        <button class="tablinks" onclick="openDayTab(event, 'Saturday')">Saturday</button>
+        <button class="tablinks" onclick="openDayTab(event, 'Sunday')">Sunday</button>
+      </div>
+      
+      <!-- Collapsible help from: https://www.w3schools.com/howto/howto_js_collapsible.asp -->
+      <!-- Monday content -->
+      <div id="Monday" class="tabcontent">
+        <h2>It’s Monday!</h2>
+        <p>Today you have Object Oriented Analysis & Design from 10:20 a.m. to 11:10 a.m. and Image from 4:10 p.m. to 5:25 p.m. You got this!</p>
+        <h3>Some things you can do to destress:</h3>
 
-      <button type="button" class="collapsible">Take a long shower</button>
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <button type="button" class="collapsible">Take a long shower</button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button type="button" class="collapsible">Organize your room</button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button type="button" class="collapsible">Lie down for 20 minutes</button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+      
+      <!-- Tuesday content -->
+      <div id="Tuesday" class="tabcontent">
+        <h2>It’s Tuesday!</h2>
+        <p>Today you have ...</p>
+        <h3>Some things you can do to destress:</h3>
+
+        <button type="button" class="collapsible">...</button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button type="button" class="collapsible">...</button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button type="button" class="collapsible">...</button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+      
+      <!-- Wednesday content -->
+      <div id="Wednesday" class="tabcontent">
+        <h2>It’s Wednesday!</h2>
+        <p>Today you have ...</p>
+        <h3>Some things you can do to destress:</h3>
+
+        <button type="button" class="collapsible">...</button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button type="button" class="collapsible">...</button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button type="button" class="collapsible">...</button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
       </div>
 
-      <button type="button" class="collapsible">Organize your room</button>
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <!-- Thursday content -->
+      <div id="Thursday" class="tabcontent">
+        <h2>It’s Thursday!</h2>
+        <p>Today you have ...</p>
+        <h3>Some things you can do to destress:</h3>
+
+        <button type="button" class="collapsible">...</button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button type="button" class="collapsible">...</button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button type="button" class="collapsible">...</button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+      
+      <!-- Friday content -->
+      <div id="Friday" class="tabcontent">
+        <h2>It’s Friday!</h2>
+        <p>Today you have ...</p>
+        <h3>Some things you can do to destress:</h3>
+
+        <button type="button" class="collapsible">...</button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button type="button" class="collapsible">...</button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button type="button" class="collapsible">...</button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
       </div>
 
-      <button type="button" class="collapsible">Lie down for 20 minutes</button>
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <!-- Saturday content -->
+      <div id="Saturday" class="tabcontent">
+        <h2>It’s Saturday!</h2>
+        <p>Today you have ...</p>
+        <h3>Some things you can do to destress:</h3>
+
+        <button type="button" class="collapsible">...</button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button type="button" class="collapsible">...</button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button type="button" class="collapsible">...</button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
       </div>
-    </div>
-    
-    <div id="Tuesday" class="tabcontent">
-      <h2>It’s Tuesday!</h2>
-      <p>Today you have ...</p>
-      <h3>Some things you can do to destress:</h3>
+      
+      <!-- Sunday content -->
+      <div id="Sunday" class="tabcontent">
+        <h2>It’s Sunday!</h2>
+        <p>Today you have ...</p>
+        <h3>Some things you can do to destress:</h3>
 
-      <button type="button" class="collapsible">...</button>
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <button type="button" class="collapsible">...</button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button type="button" class="collapsible">...</button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button type="button" class="collapsible">...</button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
       </div>
-
-      <button type="button" class="collapsible">...</button>
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-
-      <button type="button" class="collapsible">...</button>
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-    </div>
-    
-    <div id="Wednesday" class="tabcontent">
-      <h2>It’s Wednesday!</h2>
-      <p>Today you have ...</p>
-      <h3>Some things you can do to destress:</h3>
-
-      <button type="button" class="collapsible">...</button>
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-
-      <button type="button" class="collapsible">...</button>
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-
-      <button type="button" class="collapsible">...</button>
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-    </div>
-
-    <div id="Thursday" class="tabcontent">
-      <h2>It’s Thursday!</h2>
-      <p>Today you have ...</p>
-      <h3>Some things you can do to destress:</h3>
-
-      <button type="button" class="collapsible">...</button>
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-
-      <button type="button" class="collapsible">...</button>
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-
-      <button type="button" class="collapsible">...</button>
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-    </div>
-    
-    <div id="Friday" class="tabcontent">
-      <h2>It’s Friday!</h2>
-      <p>Today you have ...</p>
-      <h3>Some things you can do to destress:</h3>
-
-      <button type="button" class="collapsible">...</button>
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-
-      <button type="button" class="collapsible">...</button>
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-
-      <button type="button" class="collapsible">...</button>
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-    </div>
-
-    <div id="Saturday" class="tabcontent">
-      <h2>It’s Saturday!</h2>
-      <p>Today you have ...</p>
-      <h3>Some things you can do to destress:</h3>
-
-      <button type="button" class="collapsible">...</button>
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-
-      <button type="button" class="collapsible">...</button>
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-
-      <button type="button" class="collapsible">...</button>
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-    </div>
-    
-    <div id="Sunday" class="tabcontent">
-      <h2>It’s Sunday!</h2>
-      <p>Today you have ...</p>
-      <h3>Some things you can do to destress:</h3>
-
-      <button type="button" class="collapsible">...</button>
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-
-      <button type="button" class="collapsible">...</button>
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-
-      <button type="button" class="collapsible">...</button>
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-    </div>
+    </section>
 
     <hr class="groove">
 
     <section id="quoteMachine">
-      <h3 id="quote">“There is nothing like a dream to create the future.”</h3>
+      <h3 id="quote">“There is nothing like a dream to create the future. ”</h3>
       <p id="quoteAuthor">Victor Hugo</p>
     </section>
 
-    <p id="citations">Header photo provided by <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
+    <section id="footer">
+      <p>Header photo provided by <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
+    </section>
 
-    
-    <script>
-      //Vertical tab menu:
-      function openDayTab(evt, dayOfWeek) {
-        var i, tabcontent, tablinks;
-
-        // Hide all other menu items while not active
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-        }
-
-        // If tab is not active, change the class
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        
-        // Display selected tab and change it to "active"
-        document.getElementById(dayOfWeek).style.display = "block";
-        evt.currentTarget.className += " active";
-      }
-      document.getElementById("defaultOpen").click(); // Open the tab labeled "defaultOpen"
-      
-      
-      // Collapsibles:
-      var coll = document.getElementsByClassName("collapsible");
-      
-      for (var i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-          this.classList.toggle("open");
-          var content = this.nextElementSibling;
-          if (content.style.display === "block") {
-            content.style.display = "none";
-          } else {
-            content.style.display = "block";
-          }
-        });
-      }
-    </script>
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>

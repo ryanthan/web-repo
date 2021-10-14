@@ -1,3 +1,4 @@
+/* General Styling */
 body {
   margin: 0;
   font-family:"Raleway";
@@ -13,13 +14,19 @@ h2 {
 
 h3 {
   margin-bottom: 8px;
-  font-family: "Raleway";
+  font-family: "Montserrat";
   font-weight: bold;
   font-size: 17px;
 }
 
+.groove {
+  border: groove #001233 2px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
 /* Header */
-#mainImage {
+#header {
   height: 23vh;
   overflow: hidden;
   background: url("assets/mountains.jpg");
@@ -32,20 +39,15 @@ h3 {
   align-items: center;
 }
 
-#mainImage h1{
+#header h1{
   font-family: "Montserrat";
   font-weight: bold;
-  font-size: 3.5vw;
+  font-size: 3em;
   color: white;
   filter: drop-shadow(0 0 0.3rem black);
 }
 
-.groove {
-  border: groove #001233 2px;
-  margin: 5px;
-}
-
-/* Vertical Tabs, help from: https://www.w3schools.com/howto/howto_js_vertical_tabs.asp */
+/* Vertical Tabs */
 * {box-sizing: border-box}
 
 .tab {
@@ -59,12 +61,12 @@ h3 {
   display: block;
   color: white;
   background-color: #30446B;
-  cursor: pointer;
   padding: 15px;
   width: 100%;
   border: none;
-  transition: 0.3s;
+  transition: 0.2s;
   font-size: 17px;
+  cursor: pointer;
 }
 
 .tab button:hover {
@@ -78,8 +80,8 @@ h3 {
 .tabcontent {
   color: white;
   padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
+  padding-right: 15px;
+  padding-bottom: 5px;
   background-color: #001C50;
   width: 80%;
   height: 350px;
@@ -87,21 +89,20 @@ h3 {
   text-align: left;
 }
 
-/* Collapsibles, help from: https://www.w3schools.com/howto/howto_js_collapsible.asp */
+/* Collapsibles */
 .collapsible {
   font-family: "Raleway";
   font-weight: bold;
   background-color: #6287CD;
   color: white;
+  text-align: left;
   cursor: pointer;
-  padding: 18px;
+  padding: 15px;
   margin-bottom: 5px;
   width: 100%;
   border: solid white 2px;
   border-radius: 10px;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
+  font-size: 0.9em;
 }
 
 .open, .collapsible:hover {
@@ -121,9 +122,8 @@ h3 {
 }
 
 .content {
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-top: -10px;
   margin-bottom: 10px;
   display: none;
@@ -147,7 +147,7 @@ h3 {
 #quote{
   font-family: "Montserrat";
   font-weight: bold;
-  font-size: 2.5vw;
+  font-size: 1.5em;
   color: #001C50;
   margin-bottom: -5px;
   padding-left: 30px;
@@ -157,14 +157,16 @@ h3 {
 #quoteAuthor {
   font-family: "Montserrat";
   font-weight: normal;
-  font-size: 1.3vw;
+  font-size: 1em;
   color: #001C50;
 }
 
-#citations {
+
+/* Footer */
+#footer p {
   font-family: "Montserrat";
   font-weight: bold;
-  font-size: 0.8vw;
+  font-size: 0.6em;
   color: #001C50;
 }
 
