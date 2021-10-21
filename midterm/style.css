@@ -244,6 +244,10 @@ h3 {
   color: #001C50;
 }
 
+#footer h4 {
+  display: none;
+}
+
 a:link {
   color: #30446B;
   transition: color 0.2s;
