@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Ryan's Self-Care Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:normal,bold,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:normal,bold,900">
+  </head>
+
+  <body>
+    <section id="header">
+      <h1>Ryan's Self-Care Menu</h1>
+    </section>
+
+    <hr class="groove">
+
+    <section id="selfCareMenu">
+      <!-- Vertical Tabs help from: https://www.w3schools.com/howto/howto_js_vertical_tabs.asp -->
+      <div class="tab">
+        <button class="tablinks" onclick="openDayTab(event, 'Monday')" id="defaultOpen">Monday</button>
+        <button class="tablinks" onclick="openDayTab(event, 'Tuesday')">Tuesday</button>
+        <button class="tablinks" onclick="openDayTab(event, 'Wednesday')">Wednesday</button>
+        <button class="tablinks" onclick="openDayTab(event, 'Thursday')">Thursday</button>
+        <button class="tablinks" onclick="openDayTab(event, 'Friday')">Friday</button>
+        <button class="tablinks" onclick="openDayTab(event, 'Saturday')">Saturday</button>
+        <button class="tablinks" onclick="openDayTab(event, 'Sunday')">Sunday</button>
+      </div>
+      
+      <!-- Collapsible help from: https://www.w3schools.com/howto/howto_js_collapsible.asp -->
+      <!-- Monday content -->
+      <div id="Monday" class="tabcontent">
+        <h2>It’s Monday!</h2>
+        <p>Today you have Object Oriented Analysis & Design from 10:20 a.m. to 11:10 a.m. and Image from 4:10 p.m. to 5:25 p.m. You got this!</p>
+        <h3>Some things you can do to destress:</h3>
+
+        <button type="button" class="collapsible">Take a long shower</button>
+        <div class="content">
+          <p>After a long day, sometimes the best thing to clear your head is a long shower. Put on some jams, relax, and soak in that warm water!</p>
+        </div>
+
+        <button type="button" class="collapsible">Organize your room</button>
+        <div class="content">
+          <p>Take some time to clean your room! Throw on some music and organize your books, do some dusting, make your bed, etc. It may seem tedious now but a clean room will lift your mood, I promise!</p>
+        </div>
+
+        <button type="button" class="collapsible">Lie down for 20 minutes</button>
+        <div class="content">
+          <p>Chances are your back is gonna hurt halfway through the day so remember to lie down for a bit when it does! Take this chance to relax a bit by watching some YouTube, scrolling through social media, or playing some mobile games.</p>
+        </div>
+
+        <button type="button" class="collapsible">Do some breathing exercises</button>
+        <div class="content">
+          <p>Take a few minutes to close your eyes and do some breathing exercises to help clear your head and calm your anxiety. Follow one of the links below to get started:</p>
+          <ul>
+            <li><a href="https://www.youtube.com/watch?v=F28MGLlpP90" target="_blank">15 Minute Deep Breathing Exercise | City of Hope</a></li>
+            <li><a href="https://www.healthline.com/health/breathing-exercises-for-anxiety" target="_blank">8 Breathing Exercises to Try When You Feel Anxious</a></li>
+            <li><a href="https://www.youtube.com/watch?v=SEfs5TJZ6Nk&list=PLZnnWZRQ21N4k2Rfc6sXboyh_EXWTRw5S" target="_blank">Mindful Break Videos | MyLife</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Tuesday content -->
+      <div id="Tuesday" class="tabcontent">
+        <h2>It’s Tuesday!</h2>
+        <p>Today you have Web from 9:35 a.m. to 10:50 a.m. and Image Lab from 12:45 p.m. to 2 p.m. Let's do this!</p>
+        <h3>Some things you can do to destress:</h3>
+
+        <button type="button" class="collapsible">Take the dogs for a walk</button>
+        <div class="content">
+          <p>Take the puppers out for a quick walk around the neighborhood. Maybe stop by the park while you're out?</p>
+          <img src="assets/puppies1.jpeg" alt="My two dogs (a yorkie and shih-tzu)." class="collapsibleImages">
+        </div>
+
+        <button type="button" class="collapsible">Listen to some music</button>
+        <div class="content">
+          <p>Whether it's lo-fi, K-pop, or video game music, put on some music while you work! Take a moment here and there to hum along or if you're feeling up to it, dance like nobody's watching!</p>
+          <p>Links to your playlists on YouTube:</p>
+          <ul>
+            <li><a href="https://www.youtube.com/playlist?list=PLVY5c6B37I9EA_mSx_8LgvqczT34F1Ndx" target="_blank">Songs</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLVY5c6B37I9EC8kW77Owg8-EKX08x95Cw" target="_blank">Study Music</a></li>
+          </ul>
+        </div>
+
+        <button type="button" class="collapsible">Take a short nap</button>
+        <div class="content">
+          <p>Why not sleep for a bit? 2:00 p.m. is prime nap time! Remember not to sleep for too long though or you'll be groggy for the rest of the day.</p>
+        </div>
+
+        <button type="button" class="collapsible">Do something creative</button>
+        <div class="content">
+          <p>Why not take some time to draw something? Here are some ideas to get you started:</p>
+          <ul>
+            <li><a href="https://artjournalist.com/drawing-ideas/" target="_blank">365 Drawing Ideas for Your Sketchbook</a></li>
+            <li><a href="https://artprompts.org/" target="_blank">ArtPrompts | Prompt Generator</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Wednesday content -->
+      <div id="Wednesday" class="tabcontent">
+        <h2>It’s Wednesday!</h2>
+        <p>Today you have Object Oriented Analysis & Design from 10:20 a.m. to 11:10 a.m. and work from 11:30 a.m. to 4:00 p.m. Remember to take breaks!</p>
+        <h3>Some things you can do to destress:</h3>
+
+        <button type="button" class="collapsible">Treat yourself to a snack</button>
+        <div class="content">
+          <p>Take some time to step away from your work and peruse the fridge or cabinets for something to snack on! If you're feeling unhealthy, why not grab some chips or that candy you've been craving? Remember to watch the calories though!</p>
+        </div>
+
+        <button type="button" class="collapsible">Do some stretches</button>
+        <div class="content">
+          <p>Sitting at the computer all day is definitely not good for you so take a moment to get up and stretch! Take a quick walk around the house or do some <a href="https://www.bupa.co.uk/newsroom/ourviews/waking-up-stretching" target="_blank">simple stretches</a> to get the blood flowing.</p>
+        </div>
+
+        <button type="button" class="collapsible">Exercise for at least one hour</button>
+        <div class="content">
+          <p>Take some time out of the day to get some exercise in! Do some weight lifting, some cardio (e.g., running, exercise bike, etc.), or some simple no weight workout routines. After all, a healthy body means a healthy mind!</p>
+        </div>
+      </div>
+
+      <!-- Thursday content -->
+      <div id="Thursday" class="tabcontent">
+        <h2>It’s Thursday!</h2>
+        <p>Today you have Web lab from 9:35 a.m. to 10:50 a.m. Keep your head up!</p>
+        <h3>Some things you can do to destress:</h3>
+
+        <button type="button" class="collapsible">Hang out with friends</button>
+        <div class="content">
+          <p>Take an hour or two to hang out with some friends! Maybe grab lunch or some boba? Whatever you choose to do, it's always better with friends!</p>
+        </div>
+
+        <button type="button" class="collapsible">Treat yourself to lunch</button>
+        <div class="content">
+          <p>Treat yourself to some lunch after lab or on your way home, you deserve it! Sometimes you just need to splurge a little on something tasty to lift your mood.</p>
+        </div>
+
+        <button type="button" class="collapsible">Play with the dogs</button>
+        <div class="content">
+          <p>Chances are the puppers have been sleeping all day while you're at school. Take some time to play fetch or tug-of-war with them! You get to step away from work for a bit and best of all, they'll be happy!</p>
+          <img src="assets/puppies2.jpg" alt="My two dogs (a yorkie and shih-tzu) sleeping." class="collapsibleImages">
+        </div>
+      </div>
+      
+      <!-- Friday content -->
+      <div id="Friday" class="tabcontent">
+        <h2>It’s Friday!</h2>
+        <p>Today you have Object Oriented Analysis & Design from 10:20 a.m. to 11:10 a.m. and work from 11:30 a.m. to 4:00 p.m. Remember to take a moment to breathe!</p>
+        <h3>Some things you can do to destress:</h3>
+
+        <button type="button" class="collapsible">Watch videos on YouTube</button>
+        <div class="content">
+          <p>Take some time to watch a video or two on <a href="https://www.youtube.com/" target="_blank">YouTube</a>! Cooking videos, memes, true crime, video game news; there's always something new to watch. Careful not to fall down a couple hour long rabbit hole of videos though!</p>
+        </div>
+
+        <button type="button" class="collapsible">Bake or cook something</button>
+        <div class="content">
+          <p>It could be fun to cook or bake something for the family! Make sure you start early though since some recipes could take a while to finish. Check here for some new recipes to try:</p>
+          <ul>
+            <li><a href="https://www.allrecipes.com/recipes/" target="_blank">AllRecipes</a></li>
+            <li><a href="https://food52.com/recipes" target="_blank">Food52</a></li>
+            <li><a href="https://www.simplyrecipes.com/" target="_blank">Simply Recipes</a></li>
+          </ul>
+        </div>
+
+        <button type="button" class="collapsible">Take a break from social media</button>
+        <div class="content">
+          <p>Social media can definitely be a timesuck. Instead of scrolling for hours, try putting your phone away for the majority of the day and direct your attention to something else! Your phone isn't going anywhere, I promise.</p>
+        </div>
+
+        <button type="button" class="collapsible">Watch something on Netflix</button>
+        <div class="content">
+          <p>Just like YouTube, there's always something new to watch on Netflix. Maybe throw on a horror movie or rewatch the same show you've seen a million times? No matter what you choose to watch, it can be good to step away from your work for a while.</p>
+        </div>
+      </div>
+
+      <!-- Saturday content -->
+      <div id="Saturday" class="tabcontent">
+        <h2>It’s Saturday!</h2>
+        <p>No classes today but take a few hours to finish some errands and work on homework!</p>
+        <h3>Some things you can do to destress:</h3>
+
+        <button type="button" class="collapsible">Sleep in</button>
+        <div class="content">
+          <p>Finally the weekend! Try sleeping in an hour or two to catch up on some of the sleep you lost during the week.</p>
+        </div>
+
+        <button type="button" class="collapsible">Hang out with grandma</button>
+        <div class="content">
+          <p>Take some time to hang out with granny! Whether it's doing puzzles with her, helping her with her garden, or just hanging out, she will appreciate the company.</p>
+        </div>
+
+        <button type="button" class="collapsible">Go grocery shopping</button>
+        <div class="content">
+          <p>Take some time to go grocery shopping for the week! Don't forget to check what you need and make a shopping list before heading out. As always, make sure to add candy to that list while you're at it!</p>
+        </div>
+
+        <button type="button" class="collapsible">Go out for some ice cream</button>
+        <div class="content">
+          <p>After a long week, sometimes all you need is some delicious ice cream! Doesn't matter if it's a simple popsicle or a Blizzard from Dairy Queen, just take some time to enjoy it!</p>
+        </div>
+      </div>
+      
+      <!-- Sunday content -->
+      <div id="Sunday" class="tabcontent">
+        <h2>It’s Sunday!</h2>
+        <p>No classes today! Take a moment to relax and get refreshed before the next week begins!</p>
+        <h3>Some things you can do to destress:</h3>
+
+        <button type="button" class="collapsible">Play video games</button>
+        <div class="content">
+          <p>Finally some time to enjoy some video games! It can be good to just sit down and enter a whole new world, even if it's just for a few hours.</p>
+        </div>
+
+        <button type="button" class="collapsible">Read comics</button>
+        <div class="content">
+          <p>Take some time to catch up on your favorite comics or start a new one! There's always something new to read and enjoy.</p>
+        </div>
+
+        <button type="button" class="collapsible">Plan schedule for the upcoming week</button>
+        <div class="content">
+          <p>Another week means more homework and due dates. Take some time to plan your schedule for the week and figure out what needs to get done first. Sure it can be stressful but it's good to know when everything is due!</p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="groove">
+
+    <section id="quoteMachine">
+      <h3 id="quote"></h3>
+      <p id="quoteAuthor"></p>
+    </section>
+
+    <section id="footer">
+      <p>Header photos provided by <a href="https://unsplash.com/" target="_blank">Unsplash</a>  |  Inspirational quotes courtesy of <a href="https://forum.freecodecamp.org/t/free-api-inspirational-quotes-json-with-code-examples/311373" target="_blank">freeCodeCamp</a></p>
+    </section>
+
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="assets/quotes.json"></script>
+  </body>
+</html>

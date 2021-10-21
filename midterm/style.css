@@ -1,0 +1,223 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family:"Raleway";
+  font-size: 18px;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Montserrat";
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+h3 {
+  margin-bottom: 8px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.groove {
+  border: groove #001233 2px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+
+/* Header */
+#header {
+  height: 21vh;
+  overflow: hidden;
+  background: url("assets/mountains.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.7s ease-in-out;
+	position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header h1{
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 3em;
+  color: white;
+  filter: drop-shadow(0 0 0.3rem black);
+}
+
+
+/* Vertical Tabs */
+* {box-sizing: border-box}
+
+.tab {
+  float: left;
+  width: 20%;
+}
+
+.tab button {
+  font-family: "Raleway";
+  font-weight: bold;
+  display: block;
+  color: white;
+  background-color: #30446B;
+  padding: 16.08px;
+  width: 100%;
+  border: none;
+  transition: 0.2s;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.tab button:hover {
+  background-color: #6287CD;
+}
+
+.tab button.active {
+  background-color: #001C50;
+}
+
+.tabcontent {
+  color: white;
+  padding-left: 20px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  background-color: #001C50;
+  width: 80%;
+  height: 365px;
+  overflow: auto;
+  text-align: left;
+}
+
+
+/* Collapsibles */
+.collapsible {
+  font-family: "Raleway";
+  font-weight: bold;
+  background-color: #6287CD;
+  color: white;
+  text-align: left;
+  cursor: pointer;
+  padding: 15px;
+  margin-bottom: 5px;
+  width: 100%;
+  border: solid white 2px;
+  border-radius: 10px;
+  font-size: 0.9em;
+}
+
+.open, .collapsible:hover {
+  background-color: #002855;
+}
+
+.collapsible:after {
+  content: '\002B';
+  font-family: monospace;
+  color: white;
+  font-weight: bold;
+  float: right;
+}
+
+.open:after {
+  content: "\2212";
+}
+
+.content {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  display: none;
+  border-radius: 10px;
+  background-color: black;
+  border: solid white 2px;
+  font-size: 16px;
+}
+
+.content a:link {
+  color: white;
+  font-weight: bold;
+}
+
+.content a:visited {
+  color: #8c8c8c;
+  font-weight: bold;
+}
+
+.content a:hover {
+  color: #e3f2ff;
+  font-weight: bold;
+}
+
+.content a:active {
+  color: #8c8c8c;
+  font-weight: bold;
+}
+
+.collapsibleImages {
+  height: 300px;
+  width: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+
+/* Quote Machine */
+#quoteMachine {
+  height: auto;
+  background: url("assets/quoteBackground.png");
+	background-size: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#quote{
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #001C50;
+  margin-bottom: -5px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#quoteAuthor {
+  font-family: "Montserrat";
+  font-weight: normal;
+  font-size: 1em;
+  color: #001C50;
+}
+
+
+/* Footer */
+#footer p {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 0.6em;
+  color: #001C50;
+}
+
+a:link {
+  color: #30446B;
+  font-weight: bold;
+}
+
+a:visited {
+  color: #002855;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #6287CD;
+  font-weight: bold;
+}
+
+a:active {
+  color: #002855;
+  font-weight: bold;
+}
