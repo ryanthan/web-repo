@@ -28,20 +28,19 @@ h3 {
 
 /* Header */
 #header {
-  height: 21vh;
+  height: 18vh;
   overflow: hidden;
   background: url("assets/mountains.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
   background-size: cover;
   transition: all 0.7s ease-in-out;
-	position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#header h1{
+#header h1 {
   font-family: "Montserrat";
   font-weight: bold;
   font-size: 3em;
@@ -50,12 +49,14 @@ h3 {
 }
 
 
-/* Vertical Tabs */
+/* Vertical Tabs + Content */
 * {box-sizing: border-box}
 
 .tab {
   float: left;
   width: 20%;
+  height: 53vh;
+  background-color: #30446B;
 }
 
 .tab button {
@@ -64,11 +65,11 @@ h3 {
   display: block;
   color: white;
   background-color: #30446B;
-  padding: 16.08px;
+  height: calc(100%/7);
   width: 100%;
   border: none;
-  transition: 0.2s;
-  font-size: 17px;
+  transition: background-color 0.2s;
+  font-size: 18px;
   cursor: pointer;
 }
 
@@ -87,17 +88,18 @@ h3 {
   padding-bottom: 5px;
   background-color: #001C50;
   width: 80%;
-  height: 365px;
+  height: 53vh;
   overflow: auto;
   text-align: left;
 }
 
 
-/* Collapsibles */
+/* Collapsibles + Content */
 .collapsible {
   font-family: "Raleway";
   font-weight: bold;
   background-color: #6287CD;
+  transition: background-color 0.2s;
   color: white;
   text-align: left;
   cursor: pointer;
@@ -107,9 +109,15 @@ h3 {
   border: solid white 2px;
   border-radius: 10px;
   font-size: 0.9em;
+  position: relative;
+  z-index: 1;
 }
 
-.open, .collapsible:hover {
+.open {
+  background-color: #30446B;
+}
+
+.collapsible:hover {
   background-color: #002855;
 }
 
@@ -117,7 +125,6 @@ h3 {
   content: '\002B';
   font-family: monospace;
   color: white;
-  font-weight: bold;
   float: right;
 }
 
@@ -128,13 +135,17 @@ h3 {
 .content {
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: -10px;
-  margin-bottom: 10px;
-  display: none;
-  border-radius: 10px;
+  margin-bottom: -5px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
   background-color: black;
+  border-radius: 10px;
   border: solid white 2px;
   font-size: 16px;
+  position: relative;
+  top: -15px;
+  z-index: 0;
 }
 
 .content a:link {
@@ -153,7 +164,7 @@ h3 {
 }
 
 .content a:active {
-  color: #8c8c8c;
+  color: #363636;
   font-weight: bold;
 }
 
@@ -165,45 +176,77 @@ h3 {
 }
 
 
-/* Quote Machine */
+/* Quote + Joke Machine */
 #quoteMachine {
   height: auto;
   background: url("assets/quoteBackground.png");
-	background-size: 300px;
+	background-size: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#quote{
+#quote {
   font-family: "Montserrat";
   font-weight: bold;
   font-size: 1.5em;
   color: #001C50;
-  margin-bottom: -5px;
+  margin-bottom: -10px;
   padding-left: 30px;
   padding-right: 30px;
+  margin-top: 15px;
 }
 
 #quoteAuthor {
   font-family: "Montserrat";
   font-weight: normal;
-  font-size: 1em;
+  font-size: 1.1em;
   color: #001C50;
+}
+
+#buttonContainer {
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.roundedButton {
+  width: 40px;
+  height: 40px;
+  background-color: #30446B;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.roundedButton:hover {
+  background-color: #6287CD;
+}
+
+.roundedButton:active {
+  background-color: #001233;
+}
+
+.buttonIcon {
+  height: 25px;
+  width: 25px;
+  filter: brightness(0) invert(1);
 }
 
 
 /* Footer */
 #footer p {
   font-family: "Montserrat";
-  font-weight: bold;
   font-size: 0.6em;
   color: #001C50;
 }
 
 a:link {
   color: #30446B;
+  transition: color 0.2s;
   font-weight: bold;
 }
 

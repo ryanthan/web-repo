@@ -16,9 +16,9 @@
     <hr class="groove">
 
     <section id="selfCareMenu">
-      <!-- Vertical Tabs help from: https://www.w3schools.com/howto/howto_js_vertical_tabs.asp -->
+      <!-- Vertical Tabs, help from: https://www.w3schools.com/howto/howto_js_vertical_tabs.asp -->
       <div class="tab">
-        <button class="tablinks" onclick="openDayTab(event, 'Monday')" id="defaultOpen">Monday</button>
+        <button class="tablinks" onclick="openDayTab(event, 'Monday')">Monday</button>
         <button class="tablinks" onclick="openDayTab(event, 'Tuesday')">Tuesday</button>
         <button class="tablinks" onclick="openDayTab(event, 'Wednesday')">Wednesday</button>
         <button class="tablinks" onclick="openDayTab(event, 'Thursday')">Thursday</button>
@@ -229,13 +229,27 @@
     <section id="quoteMachine">
       <h3 id="quote"></h3>
       <p id="quoteAuthor"></p>
+
+      <div id="buttonContainer">
+        <a href="javascript:getInspirationalQuote();" class="roundedButton">
+          <img src="assets/lightbulbIcon.svg" alt="Lightbulb icon" class="buttonIcon" title="Get an inspirational quote!">
+        </a>
+  
+        <a href="javascript:getDadJoke();" class="roundedButton">
+          <img src="assets/mustacheIcon.svg" alt="Mustache icon" class="buttonIcon" title="Get an random dad joke!">
+        </a>
+  
+        <a href="javascript:getProgrammingJoke();" class="roundedButton">
+          <img src="assets/codeIcon.svg" alt="Code symbol icon" class="buttonIcon" title="Get an random programming joke!">
+        </a>
+      </div>
     </section>
 
     <section id="footer">
-      <p>Header photos provided by <a href="https://unsplash.com/" target="_blank">Unsplash</a>  |  Inspirational quotes courtesy of <a href="https://forum.freecodecamp.org/t/free-api-inspirational-quotes-json-with-code-examples/311373" target="_blank">freeCodeCamp</a></p>
+      <p>Header photos provided by <a href="https://unsplash.com/" target="_blank">Unsplash</a> | Inspirational quotes from <a href="https://forum.freecodecamp.org/t/free-api-inspirational-quotes-json-with-code-examples/311373" target="_blank">freeCodeCamp</a> | Dad jokes from <a href="https://icanhazdadjoke.com/" target="_blank">icanhazdadjoke.com</a> | Programming jokes from <a href="https://sv443.net/jokeapi/v2/" target="_blank">JokeAPI</a> | Icons from <a href="https://www.svgrepo.com/" target="_blank">SVG Repo</a></p>
     </section>
 
+    <!-- External javascript file  -->
     <script type="text/javascript" src="index.js"></script>
-    <script type="text/javascript" src="assets/quotes.json"></script>
   </body>
 </html>
