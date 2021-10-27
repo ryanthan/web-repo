@@ -13,10 +13,10 @@ h2 {
 }
 
 h3 {
-  margin-bottom: 8px;
   font-family: "Montserrat";
   font-weight: bold;
   font-size: 17px;
+  margin-bottom: 8px;
 }
 
 .groove {
@@ -62,14 +62,13 @@ h3 {
 .tab button {
   font-family: "Raleway";
   font-weight: bold;
-  display: block;
   color: white;
   background-color: #30446B;
   height: calc(100%/7);
   width: 100%;
   border: none;
   transition: background-color 0.2s;
-  font-size: 18px;
+  font-size: 1.1em;
   cursor: pointer;
 }
 
@@ -98,17 +97,17 @@ h3 {
 .collapsible {
   font-family: "Raleway";
   font-weight: bold;
-  background-color: #6287CD;
-  transition: background-color 0.2s;
+  font-size: 1em;
   color: white;
   text-align: left;
+  background-color: #6287CD;
+  transition: background-color 0.2s;
   cursor: pointer;
   padding: 15px;
   margin-bottom: 5px;
   width: 100%;
   border: solid white 2px;
   border-radius: 10px;
-  font-size: 0.9em;
   position: relative;
   z-index: 1;
 }
@@ -142,7 +141,7 @@ h3 {
   background-color: black;
   border-radius: 10px;
   border: solid white 2px;
-  font-size: 16px;
+  font-size: 0.9em;
   position: relative;
   top: -15px;
   z-index: 0;
@@ -199,7 +198,7 @@ h3 {
 }
 
 #quoteAuthor {
-  font-family: "Montserrat";
+  font-family: "Raleway";
   font-weight: normal;
   font-size: 1.1em;
   color: #001C50;
@@ -239,8 +238,8 @@ h3 {
 
 /* Footer */
 #footer p {
-  font-family: "Montserrat";
-  font-size: 0.6em;
+  font-family: "Raleway";
+  font-size: 0.7em;
   color: #001C50;
 }
 

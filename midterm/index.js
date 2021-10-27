@@ -11,7 +11,7 @@ function getInspirationalQuote() {
         // Change quote and author on quote machine
         document.getElementById("quote").innerHTML = data[randomIndex].text;
         document.getElementById("quoteAuthor").innerHTML = data[randomIndex].author;
-    }).catch(function(error) {
+    }).catch(function(error) { // Error handling
         console.log("Error getting quotes from API! Using default quote.");
         document.getElementById("quote").innerHTML = "There is nothing like a dream to create the future.";
         document.getElementById("quoteAuthor").innerHTML = "Victor Hugo";
@@ -29,7 +29,7 @@ function getDadJoke() {
         // Replace quote text with joke
         document.getElementById("quote").innerHTML = data.joke;
         document.getElementById("quoteAuthor").innerHTML = "";
-    }).catch(function(error) {
+    }).catch(function(error) { // Error handling
         console.log("Error getting jokes from API! Using default joke.");
         document.getElementById("quote").innerHTML = "Why do bees have sticky hair? Because they use honey combs!";
         document.getElementById("quoteAuthor").innerHTML = "";
@@ -50,7 +50,7 @@ function getProgrammingJoke() {
             document.getElementById("quote").innerHTML = data.setup;
             document.getElementById("quoteAuthor").innerHTML = data.delivery;
         }
-    }).catch(function(error) {
+    }).catch(function(error) { // Error handling
         console.log("Error getting facts from API! Using default programming joke.");
         document.getElementById("quote").innerHTML = "Eight bytes walk into a bar. The bartender asks, “Can I get you anything?”";
         document.getElementById("quoteAuthor").innerHTML = "“Yeah,” reply the bytes.  “Make us a double.”";
@@ -99,7 +99,9 @@ function openDayTab(evt, dayOfWeek) {
         "assets/mountains13.jpg", 
         "assets/mountains14.jpg", 
         "assets/mountains15.jpg"];
-    header.style.backgroundImage = "url(" + images[imageIndex] + ")";
+    header.style.backgroundImage = "url(" + images[imageIndex] + ")"; // Change header image
+
+    // Make sure index doesn't go out of bounds
     if (imageIndex >= images.length - 1) {
         imageIndex = 0;
     } else {
