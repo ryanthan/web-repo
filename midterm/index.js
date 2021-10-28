@@ -62,24 +62,24 @@ function getProgrammingJoke() {
 var imageIndex = 0;
 
 // Open content of tab when clicked and change header image
-function openDayTab(evt, dayOfWeek) {
+function openDayTab(event, dayOfWeek) {
     var i, tabcontent, tablinks;
 
-    // Hide all other menu items while not active
+    // Hide all menu content by default
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
 
-    // If tab is not active, remove "active" from the class name
+    // Remove "active" from the class name for all tab links by default
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
     
-    // Display selected tab and change it to "active"
+    // Display selected tab content and change it's class to "active"
     document.getElementById(dayOfWeek).style.display = "block";
-    evt.currentTarget.className += " active";
+    event.currentTarget.className += " active";
 
     // Change header image by cycling through image array
     var header = document.getElementById("header");
@@ -101,7 +101,7 @@ function openDayTab(evt, dayOfWeek) {
         "assets/mountains15.jpg"];
     header.style.backgroundImage = "url(" + images[imageIndex] + ")"; // Change header image
 
-    // Make sure index doesn't go out of bounds
+    // Make sure image index doesn't go out of bounds
     if (imageIndex >= images.length - 1) {
         imageIndex = 0;
     } else {
@@ -118,7 +118,7 @@ for (var i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function() {
         this.classList.toggle("open");
         var content = this.nextElementSibling;
-        if (content.style.maxHeight){
+        if (content.style.maxHeight) {
             content.style.maxHeight = null;
         } else {
             content.style.maxHeight = content.scrollHeight + "px";
