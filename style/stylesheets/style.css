@@ -45,6 +45,7 @@ h2, h3 {
 /* Social media icons */
 #socialMedia {
   display: flex;
+  flex-wrap: wrap;
   margin: auto;
   flex-grow: 1;
 }
@@ -114,7 +115,7 @@ a:active {
     align-items: left;
   }
 
-  #introHeading {
+  h1 {
     font-size: 25px;
   }
 }
@@ -134,7 +135,7 @@ a:active {
     align-items: center;
   }
 
-  #introHeading {
+  h1 {
     font-size: 22px;
   }
 
