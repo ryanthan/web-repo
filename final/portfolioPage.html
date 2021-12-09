@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Portfolio | Ryan Than</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="style/portfolioStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:normal,bold,800,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:normal,bold,900">
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <div class="sticky"> <!-- Wrapper to make nav bar stick to top of screen -->
+      <nav id="navbar">
+          <a href="/index.html"><img src="assets/logo-color.png" id="logo" alt="Ryan Logo"></a> <!-- Logo (also acts as a link to home) -->
+            
+          <ul>
+              <li>
+                  <a href="/index.html" class="menuitem">Home</a> <!-- Home Link -->
+              </li>
+    
+               <li>
+                  <a href="/aboutMePage.html" class="menuitem">About Me</a> <!-- About Me Link -->
+              </li>
+    
+              <li>
+                  <a href="#" class="menuitem" id="current-page">Portfolio</a> <!-- Portfolio Link -->
+              </li>
+          </ul>
+      </nav>
+    
+      <hr class="groove">
+    </div>
+
+    <section id="main-content">
+      <!-- Background video + red overlay -->  
+      <video src="assets/backgroundVideo.mp4" muted loop autoplay></video>
+      <div id="videoOverlay"></div>
+
+      <!-- Portfolio Content -->
+      <h1>Welcome to my Portfolio!</h1>
+
+      <h2>- School Projects -</h2>
+
+      <div class="card">
+          <img src="assets/ludos.png" alt="" class="cardImage">
+          <div class="cardContent">
+              <h3>Ludos</h3>
+              <p>Ludos is an iOS app created using Xcode that presents users with an extensive list of video games gathered from the RAWG API. Users are able to search
+                   for specific games, use filters to focus on their desired platforms/genres, add games to a favorites list, and find new games through the random feature.</p>
+              <br>
+              <p>You can find an early interactable prototype of this app <a href="https://www.figma.com/proto/IVsbRBWXxU5qIoGwhI8dgJ/Video-Game-Recommender?node-id=0%3A3&scaling=scale-down&page-id=0%3A1" target="_blank">here</a> and 
+                  see a video demo of the app <a href="https://drive.google.com/file/d/1NQGoXCEShB9E6k3Jy4DxgPsOF3YaliVb/view?usp=sharing" target="_blank">here</a>.</p>
+          </div>
+      </div>
+
+      <div class="card">
+          <img src="assets/insights.png" alt="" class="cardImage">
+          <div class="cardContent">
+              <h3>INSIGHTS Intervention</h3>
+              <p>For my senior capstone project at the University of Colorado Boulder, my team and I were paired with <a href="https://insightsintervention.com/" target="_blank">INSIGHTS Intervention</a>, an evidence-based 
+                  intervention with parenting, teacher, and primary grade classroom programs. We were in charge of enhancing the overall user experience of their 
+                  official website and building a mobile application using React Native. I was in charge of the overall creative design and worked on both the website 
+                  and front-end of the application.</p>
+              <br>
+              <p>You can find the application <a href="http://mobile.insightsintervention.com/" target="_blank">here</a> and the initial prototype <a href="https://www.figma.com/file/kfFAUJCEowte0MgGSY0E9G/Insights-Companion-App?node-id=0%3A1" target="_blank">here</a>. You can also view my team’s presentation 
+                  of our completed application <a href="https://drive.google.com/file/d/1eGHResRP-OW7zRGPPmQ6MXwXVGYAVl3p/view?usp=sharing" target="_blank">here</a>.</p>
+          </div>
+      </div>
+
+      <div class="card">
+          <img src="assets/tactileBook.jpg" alt="" class="cardImage">
+          <div class="cardContent">
+              <h3>Tactile Picture Books</h3>
+              <p>I have designed and constructed two separate tactile picture books based off The Very Hungry Caterpillar by Eric Carle and If I Crossed the Road by 
+                  Stephen Kroninger. These books serve to provide visually impaired learners an opportunity to experience popular children’s stories. By 3D modeling, 
+                  3D printing, experimenting with different textures, and utilizing braille, we are able to let users experience these stories in a unique way.</p>
+          </div>
+      </div>
+
+      <div class="card">
+          <img src="assets/onett.gif" alt="" class="cardImage">
+          <div class="cardContent">
+              <h3>Onett</h3>
+              <p>For my final project in a Computer Graphics course, I recreated a section of the fictional city Onett from the 1994 role playing game EarthBound. This 
+                  town was created entirely from scratch in C using the Open Graphics Library (OpenGL). The town can be viewed from orthogonal, perspective, and first-person modes.
+                  The program can be found <a href="https://github.com/ryanthan/Graphics_FinalProject_Onett">here</a>.</p>
+          </div>
+      </div>
+
+      <h2>- Personal Projects -</h2>
+
+      <div class="card">
+          <img src="assets/seaOfTrees.png" alt="" class="cardImage">
+          <div class="cardContent">
+              <h3>The Sea of Trees</h3>
+              <p>The Sea of Trees is a short choose your own adventure game that has players attempting to escape a horror-filled forest. It was created using Unity.</p>
+              <br>
+              <p>The game can be played <a href="https://ryanthan.itch.io/the-sea-of-trees" target="_blank">here</a>.</p>
+          </div>
+      </div>
+
+      <div class="card">
+          <img src="assets/forgottenSins.png" alt="" class="cardImage">
+          <div class="cardContent">
+              <h3>Forgotten Sins</h3>
+              <p>Forgotten Sins is a short, top-down adventure game that has players take on the role of an amnesiac robot trying to learn the secrets of the island.
+                  It was created using GB Studio.
+              </p>
+              <br>
+              <p>The game can be played <a href="https://ryanthan.itch.io/forgotten-sins" target="_blank">here</a>.</p>
+              <br>
+              <p>Design process documentation can be found here <a href="https://drive.google.com/file/d/1c-9W7bMMjc9dMF155u6y9ewow4agnSU7/view?usp=sharing" target="_blank">here</a>.</p>
+          </div>
+      </div>
+
+      <h2>- Design Projects -</h2>
+
+      <div class="card">
+          <img src="assets/monstrum-academy-logo-black.png" alt="" class="cardImage">
+          <div class="cardContent">
+              <h3>Monstrum Academy</h3>
+              <p>This is a detailed concept for a mobile game that allows players to learn a new language with a fun twist! Some design mockups for the
+                   game can be found <a href="https://www.figma.com/file/9LJdj70HyoBjoF99HTXarq/Monstrum-Academy?node-id=0%3A1" target="_blank">here</a> and 
+                   the write-up can be found <a href="https://drive.google.com/file/d/1z98iaYcgGU9tHEEfubAJoNKbmA5qqD04/view?usp=sharing" target="_blank">here</a>.</p>
+          </div>
+      </div>
+
+      <div class="card">
+          <img src="assets/cakeBox.png" alt="" class="cardImage">
+          <div class="cardContent">
+              <h3>Ryan’s Bakery Packaging Mockup</h3>
+              <p>This is a fake bakery packaging design that I created using Adobe Illustrator for the decals and Adobe Dimension for the 3D renders.</p>
+          </div>
+      </div>
+    </section>
+  </body>
+</html>

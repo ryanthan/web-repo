@@ -1,0 +1,211 @@
+/* General Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 20px;
+  background-color: #000000;
+}
+
+.groove {
+  border: groove #7D0220 2px;
+  margin: 0px;
+}
+
+a {
+  font-weight: bold;
+}
+
+
+/* Navigation Bar*/
+#navbar {
+  position: relative;
+  background-color: #000000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+#navbar ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 15px;
+}
+
+#logo {
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 2px;
+  height: 50px;
+  width: auto;
+}
+
+/* Change current page link color */
+#current-page {
+  color: #C11318 !important;
+}
+
+/* Nav bar item styling */
+.menuitem {
+  padding: 1em;
+  margin-right: 5px;
+  text-decoration: none;
+  color: #ffffff !important;
+  font-family: "Montserrat";
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+/* Change color of nav bar items on focus and hover */
+.menuitem:focus,
+.menuitem:hover,
+#logo:hover {
+  border-radius: 5px;
+  background-color: white;
+  color: black !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.menuitem:active,
+#logo:active {
+  background-color: #848484;
+  transition: none;
+}
+
+/* Main content of page */
+#main-content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-content video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+}
+
+#videoOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #CE1111;
+  mix-blend-mode: overlay;
+}
+
+#mainText {
+  color: white;
+  position: relative;
+  text-align: left;
+  padding: 10px;
+}
+
+#mainText h1 {
+  font-family: "Montserrat";
+  font-size: 4em;
+}
+
+#mainText h2 {
+  font-family: "Montserrat";
+  font-size: 2em;
+}
+
+#mainText p {
+  font-family: "Lato";
+  font-size: 1.1em;
+  margin-top: 15px;
+  max-width: 700px;
+}
+
+#mainText a {
+  font-family: "Montserrat";
+  font-size: 1em;
+  padding: 10px 30px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  background: #C11318;
+  color: #000;
+  transition: 0.25s;
+}
+
+#mainText a:hover,
+#mainText a:focus {
+  letter-spacing: 5px;
+  background: #B60527;
+}
+
+#mainText a:active {
+  letter-spacing: 5px;
+  background: #7D0220;
+}
+
+/* Hand icon + wave CSS animation */
+#handIcon {
+  height: 50px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  display: inline-block;
+  animation: wave 2.5s infinite;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  80% { transform: rotate(0deg); }
+  85% { transform: rotate(15deg); }
+  95% { transform: rotate(-15deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 14px;
+  }
+
+  #mainText {
+    position: relative;
+    text-align: center;
+    padding: 15px;
+  }
+
+  #mainText p {
+    font-size: 18px;
+  }
+  
+  .menuitem {
+    padding: 0.7em 0.6em 0.7em 0.6em;
+    font-size: 0.9em;
+    margin-right: 0px;
+  }
+
+  #handIcon {
+    height: 40px;
+  }
+}
+
+/* Prevent text cutoff on mobile landscape mode */
+@media screen and (max-height: 400px) {
+  #main-content {
+    margin-top: 40px;
+  }
+}
